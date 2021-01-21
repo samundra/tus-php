@@ -112,7 +112,7 @@
 <script>
   const uppy = Uppy.Core({debug: true, autoProceed: false})
     .use(Uppy.Dashboard, {target: '#uppyUploader', inline: true})
-    .use(Uppy.Tus, {endpoint: 'http://0.0.0.0:8081/files/'})
+    .use(Uppy.Tus, {endpoint: 'https://tusphp.local/files/'})
     .run()
 
   uppy.on('upload-success', (file, response) => {

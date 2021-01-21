@@ -7,6 +7,7 @@ services:
     container_name: tus-php-server
     ports:
       - 8081:80
+      - 443:443
     volumes:
       - ../:/var/www:delegated
       - ../example:/var/www/html:delegated
@@ -31,7 +32,8 @@ services:
       tag: tus-php-client
       group: tus-php
     environment:
-      - SERVER_URL=http://0.0.0.0:8081
+      #- SERVER_URL=http://0.0.0.0:8081
+      - SERVER_URL=https://e4063466d30b.ngrok.io
 
   redis:
     image: redis

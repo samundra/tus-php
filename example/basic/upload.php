@@ -10,7 +10,7 @@ use TusPhp\Exception\TusException;
 use TusPhp\Exception\FileException;
 use TusPhp\Exception\ConnectionException;
 
-$client = new \TusPhp\Tus\Client('http://tus-php-server');
+$client = new \TusPhp\Tus\Client('https://e4063466d30b.ngrok.io');
 
 // Alert: Sanitize all inputs properly in production code
 if ( ! empty($_FILES)) {

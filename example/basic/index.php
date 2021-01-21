@@ -144,7 +144,6 @@
         </svg>
     </a>
     <div class="row">
-
         <div class="col-md-12">
             <h1>Resumable File Upload in PHP using Tus Protocol</h1><br/>
             <h3 class="gutter-bottom">Instructions</h3>
